@@ -31,7 +31,7 @@ export default function CreativeStudio() {
           </div>
           <div className="w-36 h-1.5 rounded-full bg-slate-100 mt-2 overflow-hidden">
             <div
-              className="h-full rounded-full bg-gradient-to-r from-violet-500 to-violet-600 transition-all"
+              className="h-full rounded-full bg-gradient-to-r from-red-500 to-red-600 transition-all"
               style={{ width: `${progressPct}%` }}
             />
           </div>
@@ -92,7 +92,7 @@ export default function CreativeStudio() {
                       <div className="mt-auto pt-3 flex gap-1.5">
                         <button
                           onClick={() => setStatus(c.id, "approved")}
-                          className="flex-1 inline-flex items-center justify-center gap-1 text-xs font-semibold py-1.5 rounded-md bg-violet-600 text-white hover:bg-violet-700 transition-colors"
+                          className="flex-1 inline-flex items-center justify-center gap-1 text-xs font-semibold py-1.5 rounded-md bg-red-600 text-white hover:bg-red-700 transition-colors"
                         >
                           <CheckIcon className="w-3.5 h-3.5" />
                           Approve

@@ -69,7 +69,7 @@ export default function Recommendations() {
                 <ul className="space-y-1.5">
                   {rec.why.map((w, i) => (
                     <li key={i} className="text-sm text-slate-600 flex gap-2 leading-relaxed">
-                      <span className="text-violet-400 mt-0.5">•</span>
+                      <span className="text-red-400 mt-0.5">•</span>
                       {w}
                     </li>
                   ))}
@@ -95,7 +95,7 @@ export default function Recommendations() {
               </Section>
 
               <div className="flex gap-2 mt-5 pt-4 border-t border-slate-100">
-                <button className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-gradient-to-b from-violet-600 to-violet-700 text-white text-sm font-semibold shadow-sm shadow-violet-300 hover:from-violet-700 hover:to-violet-800 transition-colors">
+                <button className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-gradient-to-b from-red-600 to-red-700 text-white text-sm font-semibold shadow-sm shadow-red-300 hover:from-red-700 hover:to-red-800 transition-colors">
                   <SparklesIcon className="w-4 h-4" />
                   Generate Creatives
                 </button>

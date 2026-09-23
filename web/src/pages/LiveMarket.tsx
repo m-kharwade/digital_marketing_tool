@@ -52,14 +52,14 @@ export default function LiveMarket() {
                         onClick={() => setSelectedCell({ topic: row.topic, competitor: competitors[j] })}
                         style={
                           !isSelected && count > 0
-                            ? { backgroundColor: `rgba(124, 58, 237, ${0.08 + intensity * 0.34})` }
+                            ? { backgroundColor: `rgba(220, 38, 38, ${0.08 + intensity * 0.34})` }
                             : undefined
                         }
                         className={`w-11 h-8 rounded-md font-semibold text-sm transition-all ${
                           isSelected
-                            ? "bg-violet-600 text-white shadow-md shadow-violet-200 scale-105"
+                            ? "bg-red-600 text-white shadow-md shadow-red-200 scale-105"
                             : count > 0
-                            ? "text-violet-800 hover:brightness-95"
+                            ? "text-red-800 hover:brightness-95"
                             : "text-slate-300"
                         }`}
                       >
@@ -82,13 +82,13 @@ export default function LiveMarket() {
             <span className="text-slate-400">→</span>
             <span className="text-slate-900">{selectedCell.topic}</span>
             <span className="text-slate-400">→</span>
-            <span className="px-2 py-0.5 rounded-full bg-violet-100 text-violet-700 text-xs font-bold">
+            <span className="px-2 py-0.5 rounded-full bg-red-100 text-red-700 text-xs font-bold">
               {filteredAds.length} Ads
             </span>
           </div>
           {filteredAds.length === 0 ? (
             <div className="text-sm text-slate-400 italic rounded-xl border border-dashed border-slate-200 px-4 py-6 text-center">
-              No sample ads in this mock dataset for this cell — try Brand B → IVF Awareness.
+              No sample ads in this mock dataset for this cell — try Duralux → Waterproofing Solutions.
             </div>
           ) : (
             <div className="grid grid-cols-4 gap-4">
@@ -131,7 +131,7 @@ function FilterBar() {
       {filters.map((f) => (
         <button
           key={f}
-          className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-600 hover:border-violet-300 hover:text-violet-700 hover:bg-violet-50/50 transition-colors"
+          className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-600 hover:border-red-300 hover:text-red-700 hover:bg-red-50/50 transition-colors"
         >
           {f} <ChevronDownIcon className="w-3 h-3 text-slate-400" />
         </button>

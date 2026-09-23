@@ -22,8 +22,8 @@ export default function Layout() {
       <aside className="w-64 shrink-0 border-r border-slate-200/80 bg-white flex flex-col">
         <div className="px-5 py-5 border-b border-slate-100">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-violet-600 to-indigo-500 shadow-md shadow-violet-200 flex items-center justify-center text-white font-bold text-sm shrink-0">
-              A
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-red-600 to-orange-500 shadow-md shadow-red-200 flex items-center justify-center text-white font-bold text-sm shrink-0">
+              R
             </div>
             <div className="min-w-0">
               <div className="text-[10px] font-semibold text-slate-400 tracking-[0.12em]">
@@ -57,7 +57,7 @@ export default function Layout() {
                 className={({ isActive }) =>
                   `group relative flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-all ${
                     isActive
-                      ? "bg-violet-50 text-violet-700"
+                      ? "bg-red-50 text-red-700"
                       : "text-slate-500 hover:bg-slate-50 hover:text-slate-900"
                   }`
                 }
@@ -65,13 +65,13 @@ export default function Layout() {
                 {({ isActive }) => (
                   <>
                     <span
-                      className={`absolute left-0 top-1.5 bottom-1.5 w-[3px] rounded-full bg-violet-600 transition-opacity ${
+                      className={`absolute left-0 top-1.5 bottom-1.5 w-[3px] rounded-full bg-red-600 transition-opacity ${
                         isActive ? "opacity-100" : "opacity-0"
                       }`}
                     />
                     <Icon
                       className={`w-[18px] h-[18px] shrink-0 transition-colors ${
-                        isActive ? "text-violet-600" : "text-slate-400 group-hover:text-slate-600"
+                        isActive ? "text-red-600" : "text-slate-400 group-hover:text-slate-600"
                       }`}
                     />
                     {item.label}

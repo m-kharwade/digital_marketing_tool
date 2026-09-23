@@ -4,18 +4,18 @@
 export type Confidence = "High" | "Medium" | "Low";
 
 export const brand = {
-  name: "Aurelia Bath Co.",
-  industry: "Bath Products",
-  category: "Showers",
-  subcategory: "Luxury Showers",
+  name: "Rangoli Paints",
+  industry: "Paints & Coatings",
+  category: "Decorative Paints",
+  subcategory: "Interior Emulsions",
   geography: "India",
 };
 
 export const freshness = {
-  updatedAt: "08:42 AM",
+  updatedAt: "09:15 AM",
   confidence: "High" as Confidence,
-  adsAnalyzed: 63,
-  brandsAnalyzed: 7,
+  adsAnalyzed: 84,
+  brandsAnalyzed: 5,
   historyWindow: "Last 90 days of campaign data",
 };
 
@@ -24,25 +24,25 @@ export const freshness = {
 export const homeChanges = [
   {
     id: "chg-1",
-    title: "Luxury Showers ↑",
-    delta: "+31%",
+    title: "Waterproofing Demand ↑",
+    delta: "+38%",
     detail: "Competitor Activity",
-    recommendation: "Maintain current campaign. No creative change required.",
+    recommendation: "Maintain current campaign. Monsoon-season interest remains strong.",
     action: "none" as const,
   },
   {
     id: "chg-2",
-    title: "Festival Advertising ↑↑",
-    delta: "17 new creatives / 3 hrs",
+    title: "Festive Home Makeover ↑↑",
+    delta: "21 new creatives / 6 hrs",
     detail: "Sharp spike across category",
-    recommendation: "Add one festival-led shower creative.",
+    recommendation: "Add one festive-led interior emulsion creative.",
     action: "creatives" as const,
-    actionLabel: "4 creatives ready",
+    actionLabel: "5 creatives ready",
   },
   {
     id: "chg-3",
-    title: "Your Live Campaign — Luxury Shower Reel",
-    delta: "CTR 2.1% vs 1.8% target ✓ · CPC ₹16 vs ≤₹18 ✓ · Freq 2.7 vs 3.5 warning",
+    title: "Your Live Campaign — Interior Emulsion Range",
+    delta: "CTR 1.9% vs 1.6% target ✓ · CPC ₹14 vs ≤₹16 ✓ · Freq 2.4 vs 3.5 warning",
     detail: "Performing within target",
     recommendation: "CONTINUE. No action required.",
     action: "none" as const,
@@ -50,22 +50,22 @@ export const homeChanges = [
 ];
 
 export const homeSummary = {
-  spend: "₹4.2L this month",
-  keyMetric: { label: "Blended ROAS", value: "3.4x" },
-  pendingApprovals: 6,
-  newSignals: 3,
+  spend: "₹18.6L this month",
+  keyMetric: { label: "Blended ROAS", value: "4.1x" },
+  pendingApprovals: 5,
+  newSignals: 4,
 };
 
 // ---------- LIVE MARKET ----------
 
-export const competitors = ["Brand A", "Brand B", "Brand C", "Brand D"];
+export const competitors = ["ColorNova", "Duralux", "ShadeCraft", "ChromaCoat"];
 
 export const topicMatrix = [
-  { topic: "IVF Awareness", counts: [8, 12, 6, 10] },
-  { topic: "Egg Freezing", counts: [7, 2, 4, 1] },
-  { topic: "IVF Cost", counts: [2, 8, 5, 6] },
-  { topic: "Male Infertility", counts: [1, 3, 0, 2] },
-  { topic: "Patient Stories", counts: [6, 7, 4, 8] },
+  { topic: "Waterproofing Solutions", counts: [9, 14, 7, 11] },
+  { topic: "Wood Finishes & Varnishes", counts: [6, 3, 5, 2] },
+  { topic: "Weather-Proof Exteriors", counts: [3, 9, 6, 7] },
+  { topic: "Texture & Metallic Finishes", counts: [8, 5, 4, 9] },
+  { topic: "Festive Home Makeover", counts: [7, 8, 5, 10] },
 ];
 
 export type MockAd = {
@@ -80,10 +80,10 @@ export type MockAd = {
 };
 
 export const ads: MockAd[] = [
-  { id: "ad-1", competitor: "Brand B", topic: "IVF Awareness", format: "Doctor Video", cta: "Book Consultation", firstSeen: "2 Sep", lastSeen: "16 Sep", thumbnailColor: "#c7d2fe" },
-  { id: "ad-2", competitor: "Brand B", topic: "IVF Awareness", format: "Static Carousel", cta: "Learn More", firstSeen: "5 Sep", lastSeen: "15 Sep", thumbnailColor: "#fbcfe8" },
-  { id: "ad-3", competitor: "Brand B", topic: "IVF Awareness", format: "Patient Story Reel", cta: "Book Consultation", firstSeen: "1 Sep", lastSeen: "16 Sep", thumbnailColor: "#bbf7d0" },
-  { id: "ad-4", competitor: "Brand B", topic: "IVF Awareness", format: "Doctor Video", cta: "Get Quote", firstSeen: "8 Sep", lastSeen: "14 Sep", thumbnailColor: "#fde68a" },
+  { id: "ad-1", competitor: "Duralux", topic: "Waterproofing Solutions", format: "Before/After Reel", cta: "Book Free Consultation", firstSeen: "3 Aug", lastSeen: "20 Aug", thumbnailColor: "#4E7A8C" },
+  { id: "ad-2", competitor: "Duralux", topic: "Waterproofing Solutions", format: "Dealer Locator Carousel", cta: "Find a Dealer", firstSeen: "5 Aug", lastSeen: "19 Aug", thumbnailColor: "#7A8C4E" },
+  { id: "ad-3", competitor: "Duralux", topic: "Waterproofing Solutions", format: "Influencer Testimonial", cta: "Explore Shades", firstSeen: "1 Aug", lastSeen: "20 Aug", thumbnailColor: "#B5474D" },
+  { id: "ad-4", competitor: "Duralux", topic: "Waterproofing Solutions", format: "Shade Card Static", cta: "Get a Quote", firstSeen: "8 Aug", lastSeen: "18 Aug", thumbnailColor: "#D4A017" },
 ];
 
 // ---------- RECOMMENDATIONS ----------
@@ -102,41 +102,41 @@ export const recommendations: Recommendation[] = [
   {
     id: "rec-1",
     status: "KEEP",
-    what: "Run 4 creatives around Spa-Like Shower Experience",
+    what: "Run 4 creatives around Monsoon Waterproofing Range",
     why: [
-      "5 relevant competitors are actively communicating this theme",
-      "26 competitor creatives detected",
-      "Activity increased 31% this week",
-      "Your brand has only 1 current creative",
-      "Video content is outperforming static content in this topic",
+      "4 relevant competitors are actively communicating this theme",
+      "32 competitor creatives detected in the last 14 days",
+      "Category activity increased 38% this week",
+      "Your brand has only 1 current creative live",
+      "Reel-based demos are outperforming static posts 2.3x on this topic",
     ],
-    how: { format: "15-sec Reel", cta: "Explore Collection", audience: "Homeowners 28-45, renovation intent", channel: "Instagram / Facebook" },
-    target: { ctr: "≥1.8%", cpc: "≤₹18", cvr: "≥3.5%", frequencyWarning: ">3.5" },
+    how: { format: "15-sec Reel", cta: "Book Free Consultation", audience: "Homeowners 25-45, renovation intent", channel: "Instagram / Facebook" },
+    target: { ctr: "≥1.6%", cpc: "≤₹16", cvr: "≥3%", frequencyWarning: ">3.5" },
     confidence: "High",
   },
   {
     id: "rec-2",
     status: "REPLACE",
-    what: "Shift budget to Festival-Led Shower Creative",
+    what: "Shift budget to Festive Home Makeover Creative",
     why: [
-      "17 new competitor creatives detected in the last 3 hours",
-      "8 of 12 tracked competitors are participating",
-      "Festival-tagged ads outperforming category baseline by 2.1x on engagement",
+      "21 new competitor creatives detected in the last 6 hours",
+      "4 of 5 tracked competitors are running festive campaigns",
+      "Festive-tagged ads outperforming category baseline by 1.9x on engagement",
     ],
-    how: { format: "Static + Story", cta: "View Designs", audience: "Existing + lookalike", channel: "Instagram / Google Display" },
-    target: { ctr: "≥2.0%", cpc: "≤₹15", cvr: "≥4%", frequencyWarning: ">3" },
+    how: { format: "Static + Story", cta: "Explore Shades", audience: "Existing + lookalike", channel: "Instagram / Google Display" },
+    target: { ctr: "≥1.8%", cpc: "≤₹13", cvr: "≥3.5%", frequencyWarning: ">3" },
     confidence: "Medium",
   },
   {
     id: "rec-3",
     status: "MODIFY",
-    what: "Multiple Spray Modes — swap CTA to Book Consultation",
+    what: "Weather Shield Exterior Paint — swap CTA to Find a Dealer",
     why: [
-      "Conversion-intent CTAs are outperforming discovery CTAs this week",
-      "Category CPC has dropped 12% for high-intent campaigns",
+      "Dealer-locator CTAs are outperforming awareness CTAs this week",
+      "Category CPC has dropped 9% for high-intent exterior campaigns",
     ],
-    how: { format: "Product Demo Video", cta: "Book Consultation", audience: "Retargeting — site visitors 30d", channel: "Google Ads" },
-    target: { ctr: "≥1.6%", cpc: "≤₹20", cvr: "≥3%", frequencyWarning: ">3.5" },
+    how: { format: "Product Demo Video", cta: "Find a Dealer", audience: "Retargeting — site visitors 30d", channel: "Google Ads" },
+    target: { ctr: "≥1.4%", cpc: "≤₹18", cvr: "≥2.8%", frequencyWarning: ">3.5" },
     confidence: "Medium",
   },
 ];
@@ -154,26 +154,26 @@ export type Creative = {
 };
 
 export const ideas = [
-  { id: "idea-1", title: "Spa Experience", recommendationId: "rec-1" },
-  { id: "idea-2", title: "Multiple Spray Modes", recommendationId: "rec-3" },
-  { id: "idea-3", title: "Festival Shower Launch", recommendationId: "rec-2" },
+  { id: "idea-1", title: "Monsoon Waterproofing", recommendationId: "rec-1" },
+  { id: "idea-2", title: "Weather Shield Exteriors", recommendationId: "rec-3" },
+  { id: "idea-3", title: "Festive Home Makeover", recommendationId: "rec-2" },
 ];
 
 export const creatives: Creative[] = [
-  { id: "cr-1a", ideaId: "idea-1", variant: "A", headline: "Turn every morning into a spa ritual", cta: "Explore Collection", color: "#7c3aed", status: "pending" },
-  { id: "cr-1b", ideaId: "idea-1", variant: "B", headline: "Spa-grade luxury, every single day", cta: "Explore Collection", color: "#0ea5e9", status: "pending" },
-  { id: "cr-1c", ideaId: "idea-1", variant: "C", headline: "Rain shower. Real relaxation.", cta: "View Designs", color: "#059669", status: "approved" },
-  { id: "cr-1d", ideaId: "idea-1", variant: "D", headline: "Your bathroom, reimagined", cta: "Learn More", color: "#f59e0b", status: "pending" },
+  { id: "cr-1a", ideaId: "idea-1", variant: "A", headline: "Waterproof walls, zero worry every monsoon", cta: "Book Free Consultation", color: "#B5474D", status: "pending" },
+  { id: "cr-1b", ideaId: "idea-1", variant: "B", headline: "Rain-ready walls start with one coat", cta: "Book Free Consultation", color: "#4E7A8C", status: "pending" },
+  { id: "cr-1c", ideaId: "idea-1", variant: "C", headline: "Built to outlast every monsoon", cta: "Explore Shades", color: "#7A8C4E", status: "approved" },
+  { id: "cr-1d", ideaId: "idea-1", variant: "D", headline: "Your walls, weatherproofed", cta: "Get a Quote", color: "#D4A017", status: "pending" },
 
-  { id: "cr-2a", ideaId: "idea-2", variant: "A", headline: "5 spray modes. One shower.", cta: "Book Consultation", color: "#7c3aed", status: "pending" },
-  { id: "cr-2b", ideaId: "idea-2", variant: "B", headline: "Massage. Mist. Rain. Your call.", cta: "Book Consultation", color: "#0ea5e9", status: "rejected" },
-  { id: "cr-2c", ideaId: "idea-2", variant: "C", headline: "Built for every mood", cta: "Get Quote", color: "#059669", status: "pending" },
-  { id: "cr-2d", ideaId: "idea-2", variant: "D", headline: "One shower head, five experiences", cta: "Book Consultation", color: "#f59e0b", status: "pending" },
+  { id: "cr-2a", ideaId: "idea-2", variant: "A", headline: "Exteriors that shrug off the sun", cta: "Find a Dealer", color: "#B5474D", status: "pending" },
+  { id: "cr-2b", ideaId: "idea-2", variant: "B", headline: "Fade-proof color, 12-year warranty", cta: "Find a Dealer", color: "#4E7A8C", status: "rejected" },
+  { id: "cr-2c", ideaId: "idea-2", variant: "C", headline: "Built for every season", cta: "Get a Quote", color: "#7A8C4E", status: "pending" },
+  { id: "cr-2d", ideaId: "idea-2", variant: "D", headline: "One coat. Twelve years of color.", cta: "Find a Dealer", color: "#D4A017", status: "pending" },
 
-  { id: "cr-3a", ideaId: "idea-3", variant: "A", headline: "Celebrate in style this season", cta: "View Designs", color: "#7c3aed", status: "pending" },
-  { id: "cr-3b", ideaId: "idea-3", variant: "B", headline: "Festival offer: Free installation", cta: "Get Quote", color: "#0ea5e9", status: "pending" },
-  { id: "cr-3c", ideaId: "idea-3", variant: "C", headline: "Upgrade your bathroom this festive season", cta: "Explore Collection", color: "#059669", status: "pending" },
-  { id: "cr-3d", ideaId: "idea-3", variant: "D", headline: "Limited festive edition finishes", cta: "View Designs", color: "#f59e0b", status: "pending" },
+  { id: "cr-3a", ideaId: "idea-3", variant: "A", headline: "Celebrate in color this festive season", cta: "Explore Shades", color: "#B5474D", status: "pending" },
+  { id: "cr-3b", ideaId: "idea-3", variant: "B", headline: "Festive offer: Free color consultation", cta: "Get a Quote", color: "#4E7A8C", status: "pending" },
+  { id: "cr-3c", ideaId: "idea-3", variant: "C", headline: "Upgrade your home this festive season", cta: "Explore Shades", color: "#7A8C4E", status: "pending" },
+  { id: "cr-3d", ideaId: "idea-3", variant: "D", headline: "Limited-edition festive shades", cta: "Explore Shades", color: "#D4A017", status: "pending" },
 ];
 
 // ---------- CAMPAIGNS ----------
@@ -202,49 +202,49 @@ export type CampaignRow = {
 export const campaigns: CampaignRow[] = [
   {
     id: "camp-1",
-    name: "Luxury Shower Reel",
+    name: "Monsoon Waterproofing Reel",
     channel: "Instagram",
-    spend: "₹1.1L",
+    spend: "₹4.8L",
     metrics: {
-      ctr: { value: "2.1%", benchmark: "1.4–1.7%", target: "≥1.8%", onTarget: true },
-      cpc: { value: "₹16", benchmark: "₹17–20", target: "≤₹18", onTarget: true },
-      cpm: { value: "₹210", benchmark: "₹190–240", target: "≤₹230", onTarget: true },
-      cpa: { value: "₹640", benchmark: "₹600–800", target: "≤₹750", onTarget: true },
-      cvr: { value: "3.8%", benchmark: "2.8–3.4%", target: "≥3.5%", onTarget: true },
-      roas: { value: "3.4x", benchmark: "2.5–3.0x", target: "≥3.0x", onTarget: true },
-      frequency: { value: "2.7", benchmark: "—", target: "<3.5 warning", onTarget: true },
+      ctr: { value: "2.0%", benchmark: "1.3–1.6%", target: "≥1.6%", onTarget: true },
+      cpc: { value: "₹13", benchmark: "₹15–19", target: "≤₹16", onTarget: true },
+      cpm: { value: "₹190", benchmark: "₹180–230", target: "≤₹220", onTarget: true },
+      cpa: { value: "₹520", benchmark: "₹550–750", target: "≤₹700", onTarget: true },
+      cvr: { value: "3.6%", benchmark: "2.6–3.2%", target: "≥3%", onTarget: true },
+      roas: { value: "4.1x", benchmark: "2.4–2.9x", target: "≥2.8x", onTarget: true },
+      frequency: { value: "2.4", benchmark: "—", target: "<3.5 warning", onTarget: true },
     },
     aiDecision: "CONTINUE",
   },
   {
     id: "camp-2",
-    name: "Multiple Spray Modes — Search",
+    name: "Weather Shield Exteriors — Search",
     channel: "Google Ads",
-    spend: "₹0.6L",
+    spend: "₹2.6L",
     metrics: {
-      ctr: { value: "1.2%", benchmark: "1.4–1.7%", target: "≥1.6%", onTarget: false },
-      cpc: { value: "₹22", benchmark: "₹17–20", target: "≤₹20", onTarget: false },
-      cpm: { value: "₹260", benchmark: "₹190–240", target: "≤₹230", onTarget: false },
-      cpa: { value: "₹910", benchmark: "₹600–800", target: "≤₹800", onTarget: false },
-      cvr: { value: "2.1%", benchmark: "2.8–3.4%", target: "≥3%", onTarget: false },
-      roas: { value: "1.8x", benchmark: "2.5–3.0x", target: "≥2.5x", onTarget: false },
-      frequency: { value: "4.1", benchmark: "—", target: "<3.5 warning", onTarget: false },
+      ctr: { value: "1.1%", benchmark: "1.3–1.6%", target: "≥1.5%", onTarget: false },
+      cpc: { value: "₹24", benchmark: "₹15–19", target: "≤₹19", onTarget: false },
+      cpm: { value: "₹255", benchmark: "₹180–230", target: "≤₹225", onTarget: false },
+      cpa: { value: "₹890", benchmark: "₹550–750", target: "≤₹780", onTarget: false },
+      cvr: { value: "2.0%", benchmark: "2.6–3.2%", target: "≥2.8%", onTarget: false },
+      roas: { value: "1.9x", benchmark: "2.4–2.9x", target: "≥2.4x", onTarget: false },
+      frequency: { value: "4.2", benchmark: "—", target: "<3.5 warning", onTarget: false },
     },
     aiDecision: "ADJUST",
   },
   {
     id: "camp-3",
-    name: "Festival Launch — Awareness",
+    name: "Festive Makeover — Awareness",
     channel: "Facebook",
-    spend: "₹0.4L",
+    spend: "₹1.9L",
     metrics: {
-      ctr: { value: "1.9%", benchmark: "1.4–1.7%", target: "≥1.8%", onTarget: true },
-      cpc: { value: "₹14", benchmark: "₹17–20", target: "≤₹18", onTarget: true },
-      cpm: { value: "₹180", benchmark: "₹190–240", target: "≤₹230", onTarget: true },
-      cpa: { value: "₹580", benchmark: "₹600–800", target: "≤₹750", onTarget: true },
-      cvr: { value: "3.1%", benchmark: "2.8–3.4%", target: "≥3%", onTarget: true },
-      roas: { value: "2.9x", benchmark: "2.5–3.0x", target: "≥2.5x", onTarget: true },
-      frequency: { value: "1.9", benchmark: "—", target: "<3.5 warning", onTarget: true },
+      ctr: { value: "1.8%", benchmark: "1.3–1.6%", target: "≥1.6%", onTarget: true },
+      cpc: { value: "₹12", benchmark: "₹15–19", target: "≤₹17", onTarget: true },
+      cpm: { value: "₹170", benchmark: "₹180–230", target: "≤₹220", onTarget: true },
+      cpa: { value: "₹480", benchmark: "₹550–750", target: "≤₹700", onTarget: true },
+      cvr: { value: "3.0%", benchmark: "2.6–3.2%", target: "≥2.8%", onTarget: true },
+      roas: { value: "3.3x", benchmark: "2.4–2.9x", target: "≥2.6x", onTarget: true },
+      frequency: { value: "1.8", benchmark: "—", target: "<3.5 warning", onTarget: true },
     },
     aiDecision: "CONTINUE",
   },
